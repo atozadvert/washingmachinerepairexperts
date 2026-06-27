@@ -1,0 +1,6 @@
+{
+  "name": "Aelixa Portfolio Hero",
+  "description": "A pixel-perfect replica of the Aelixa marketing agency hero section featuring a custom floating header, bold display typography, amber-colored icons, and custom micro-animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
