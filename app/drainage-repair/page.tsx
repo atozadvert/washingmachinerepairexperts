@@ -39,8 +39,8 @@ import {
 const LOGO_URL =
   'https://res.cloudinary.com/dbvjzyevy/image/upload/v1782108374/Red_and_Yellow_Modern_Simple_Application_Logogram_250_x_150_px_1_svnokc.png';
 
-const PHONE = '+971501234567';
-const WHATSAPP = 'https://wa.me/971501234567';
+const PHONE = '+971508931985';
+const WHATSAPP = 'https://wa.me/971508931985';
 
 const NAV_SERVICES = [
   { title: 'Drainage Repair', icon: <Droplets className="h-4 w-4" />, href: '/drainage-repair', active: true },
@@ -487,6 +487,23 @@ export default function DrainageRepairPage() {
               </motion.div>
             ))}
           </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a
+              href={`tel:${PHONE}`}
+              className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105"
+              style={{ backgroundColor: '#f2b134' }}
+            >
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors"
+            >
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
+          </div>
         </div>
       </section>
 
@@ -659,6 +676,23 @@ export default function DrainageRepairPage() {
               </motion.div>
             ))}
           </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a
+              href={`tel:${PHONE}`}
+              className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105"
+              style={{ backgroundColor: '#f2b134' }}
+            >
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors"
+            >
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
+          </div>
         </div>
       </section>
 
@@ -739,6 +773,23 @@ export default function DrainageRepairPage() {
                 <p className="text-neutral-500 text-sm leading-relaxed">{w.desc}</p>
               </motion.div>
             ))}
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a
+              href={`tel:${PHONE}`}
+              className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105"
+              style={{ backgroundColor: '#f2b134' }}
+            >
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors"
+            >
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
           </div>
         </div>
       </section>
@@ -879,6 +930,23 @@ export default function DrainageRepairPage() {
             ))}
           </div>
         </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a
+              href={`tel:${PHONE}`}
+              className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105"
+              style={{ backgroundColor: '#f2b134' }}
+            >
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors"
+            >
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
+          </div>
       </section>
 
       {/* ============ FAQ (home-page style) ============ */}
@@ -932,6 +1000,23 @@ export default function DrainageRepairPage() {
               );
             })}
           </div>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a
+              href={`tel:${PHONE}`}
+              className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105"
+              style={{ backgroundColor: '#f2b134' }}
+            >
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors"
+            >
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
+          </div>
         </div>
       </section>
 
@@ -958,7 +1043,7 @@ export default function DrainageRepairPage() {
               <div className="flex flex-col gap-3 mt-4">
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Phone className="h-4 w-4 text-[#f2b134]" /></span>
-                  <span>+971 50 123 4567</span>
+                  <span>+971 50 893 1985</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Mail className="h-4 w-4 text-[#f2b134]" /></span>
@@ -1080,7 +1165,7 @@ export default function DrainageRepairPage() {
                   </div>
                   <div>
                     <p className="text-neutral-500 text-[11px] uppercase tracking-wider">Phone</p>
-                    <p className="text-white">+971 50 123 4567</p>
+                    <p className="text-white">+971 50 893 1985</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

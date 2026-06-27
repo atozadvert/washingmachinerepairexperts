@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import { Inter, Inter_Tight } from 'next/font/google';
+import FloatingButtons from './floating-buttons';
 import './globals.css'; // Global styles
 
 const inter = Inter({
@@ -53,6 +54,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       </head>
       <body className="antialiased text-neutral-900 bg-[#FAF9F5]" suppressHydrationWarning>
         {children}
+        <FloatingButtons />
       </body>
     </html>
   );

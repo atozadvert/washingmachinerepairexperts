@@ -911,7 +911,7 @@ export default function Page() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.35 }}
-                  href="https://wa.me/971501234567"
+                  href="https://wa.me/971508931985"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-4 rounded-2xl font-bold text-neutral-300 border border-neutral-700 flex items-center justify-center gap-2.5 text-[15px] hover:bg-neutral-800 transition-colors"
@@ -1044,7 +1044,7 @@ export default function Page() {
           className="flex flex-wrap items-center justify-center gap-4 mt-8 md:mt-10 select-none"
         >
           <motion.a
-            href="https://wa.me/971501234567"
+            href="https://wa.me/971508931985"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
@@ -1056,13 +1056,13 @@ export default function Page() {
             <span>WhatsApp Us</span>
           </motion.a>
           <motion.a
-            href="#contact"
+            href="tel:+971508931985"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm hover:bg-neutral-50 border border-neutral-200 transition-all cursor-pointer font-sans"
           >
             <Phone className="h-4.5 w-4.5 stroke-[2.5]" />
-            <span>Contact Us</span>
+            <span>Call Now</span>
           </motion.a>
         </motion.div>
 
@@ -1497,6 +1497,15 @@ export default function Page() {
             );
           })()}
         </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+          <a href="tel:+971508931985" className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105" style={{ backgroundColor: '#f2b134' }}>
+            <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+          </a>
+          <a href="https://wa.me/971508931985" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+          </a>
+        </div>
       </section>
 
       {/* SCROLL STACK: REPAIR SERVICES */}
@@ -1738,7 +1747,7 @@ export default function Page() {
               {/* STYLISH MATCHING CALL TO ACTION BUTTONS */}
               <div className="flex flex-wrap gap-4 pt-8 border-t border-neutral-200/30">
                 <motion.a 
-                  href="tel:+1234567890" 
+                  href="tel:+971508931985"
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   style={{ backgroundColor: '#f2b134' }}
@@ -1749,7 +1758,7 @@ export default function Page() {
                 </motion.a>
 
                 <motion.a 
-                  href="https://wa.me/your-number-here" 
+                  href="https://wa.me/971508931985"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}
@@ -1926,9 +1935,16 @@ export default function Page() {
           </div>
 
         </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+          <a href="tel:+971508931985" className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105" style={{ backgroundColor: '#f2b134' }}>
+            <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+          </a>
+          <a href="https://wa.me/971508931985" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors">
+            <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+          </a>
+        </div>
       </section>
-
-
 
       {/* BEAUTIFUL & CLEAN TEXT MATRIX / TABLE SECTION */}
       <section className="w-full bg-[#FAF9F5] py-20 sm:py-28 border-t border-b border-neutral-200/40">
@@ -2011,6 +2027,15 @@ export default function Page() {
                 <p className="text-neutral-600 font-mono text-[11px] leading-relaxed">{row.parts}</p>
               </div>
             ))}
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a href="tel:+971508931985" className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105" style={{ backgroundColor: '#f2b134' }}>
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a href="https://wa.me/971508931985" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
           </div>
 
         </div>
@@ -2099,6 +2124,15 @@ export default function Page() {
             })}
           </div>
 
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a href="tel:+971508931985" className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105" style={{ backgroundColor: '#f2b134' }}>
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a href="https://wa.me/971508931985" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -2125,7 +2159,7 @@ export default function Page() {
               <div className="flex flex-col gap-3 mt-4">
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Phone className="h-4 w-4 text-[#f2b134]" /></span>
-                  <span>+971 50 123 4567</span>
+                  <span>+971 50 893 1985</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Mail className="h-4 w-4 text-[#f2b134]" /></span>
@@ -2238,6 +2272,15 @@ export default function Page() {
             </motion.div>
           </div>
 
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-12">
+            <a href="tel:+971508931985" className="rounded-full text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-md transition-all hover:brightness-105" style={{ backgroundColor: '#f2b134' }}>
+              <Phone className="h-4.5 w-4.5 stroke-[2.5]" /> Book A Repair
+            </a>
+            <a href="https://wa.me/971508931985" target="_blank" rel="noopener noreferrer" className="rounded-full bg-white text-neutral-900 font-bold px-7 py-3.5 flex items-center gap-2.5 text-sm shadow-sm border border-neutral-200 hover:bg-neutral-50 transition-colors">
+              <MessageCircle className="h-4.5 w-4.5 stroke-[2.5]" /> WhatsApp Us
+            </a>
+          </div>
+
         </div>
       </section>
 
@@ -2332,7 +2375,7 @@ export default function Page() {
                   </div>
                   <div>
                     <p className="text-neutral-500 text-[11px] uppercase tracking-wider">Phone</p>
-                    <p className="text-white">+971 50 123 4567</p>
+                    <p className="text-white">+971 50 893 1985</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
