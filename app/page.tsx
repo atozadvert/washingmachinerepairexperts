@@ -435,7 +435,7 @@ const CASE_STUDIES_LIST: CaseStudy[] = [
     id: 'card-drum',
     tag: 'WASHING_MACHINE_DRUM_REPAIR',
     title: 'Washing Machine Drum Repair',
-    desc: 'A drum that does not move correctly, becomes loose or produces unusual sounds may need technical inspection. AtoZ handles drum-related washing machine faults in Dubai.',
+    desc: 'A drum that does not move correctly, becomes loose or produces unusual sounds may need technical inspection. Our team handles drum-related washing machine faults in Dubai.',
     details: [
       'Drum Bearing Replacement',
       'Loose Drum Tightening',
@@ -445,7 +445,7 @@ const CASE_STUDIES_LIST: CaseStudy[] = [
     image: '/WhatsApp Image 2026-06-22 at 11.14.27.jpeg',
     overview: 'Drum problems in a washing machine can cause loud noises, vibration, and even damage to clothing during wash cycles.',
     problem: 'A drum that does not move correctly, becomes loose, or produces unusual sounds during operation.',
-    solution: 'AtoZ technicians inspect drum bearings, tighten loose components, diagnose noise sources, and realign the drum assembly.',
+    solution: 'Our technicians inspect drum bearings, tighten loose components, diagnose noise sources, and realign the drum assembly.',
     result: 'Drum-related washing machine faults resolved with professional repair service in Dubai.',
     metric: 'Dubai',
     metricLabel: 'Wide Service'
@@ -688,12 +688,12 @@ export default function Page() {
                 )}
               </button>
 
-              <button 
-                onClick={() => { setActiveTab('About'); setIsPagesDropdownOpen(false); }}
-                className={`transition-colors duration-200 hover:text-white ${activeTab === 'About' ? 'text-[#f2b134]' : ''}`}
+              <Link
+                href="/about"
+                className="transition-colors duration-200 hover:text-white"
               >
                 About
-              </button>
+              </Link>
 
               {/* Services Dropdown Trigger */}
               <div className="relative">
@@ -746,19 +746,19 @@ export default function Page() {
                 </AnimatePresence>
               </div>
 
-              <button 
-                onClick={() => { setActiveTab('Blog'); setIsPagesDropdownOpen(false); }}
-                className={`transition-colors duration-200 hover:text-white ${activeTab === 'Blog' ? 'text-[#f2b134]' : ''}`}
+              <Link
+                href="/blog"
+                className="transition-colors duration-200 hover:text-white"
               >
                 Blog
-              </button>
+              </Link>
 
-              <button 
-                onClick={() => { setActiveTab('Contact'); setIsPagesDropdownOpen(false); }}
-                className={`transition-colors duration-200 hover:text-white ${activeTab === 'Contact' ? 'text-[#f2b134]' : ''}`}
+              <Link
+                href="/contact"
+                className="transition-colors duration-200 hover:text-white"
               >
                 Contact
-              </button>
+              </Link>
             </nav>
           </div>
 
@@ -844,25 +844,25 @@ export default function Page() {
               {/* Nav Links */}
               <div className="px-6 py-4">
                 {[
-                  { label: 'Home', tab: 'Home' },
-                  { label: 'About', tab: 'About' },
-                  { label: 'Contact', tab: 'Contact' },
+                  { label: 'Home', href: '/' },
+                  { label: 'About', href: '/about' },
+                  { label: 'Blog', href: '/blog' },
+                  { label: 'Contact', href: '/contact' },
                 ].map((item, idx) => (
-                  <motion.button
-                    key={item.tab}
+                  <motion.div
+                    key={item.href}
                     initial={{ opacity: 0, x: -15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 + idx * 0.05 }}
-                    onClick={() => { setActiveTab(item.tab); setIsMobileMenuOpen(false); }}
-                    className={`w-full text-left py-4 text-[17px] font-semibold transition-colors flex items-center justify-between ${
-                      activeTab === item.tab ? 'text-[#f2b134]' : 'text-neutral-300'
-                    } border-b border-neutral-800/40`}
                   >
-                    <span>{item.label}</span>
-                    {activeTab === item.tab && (
-                      <span className="w-2 h-2 rounded-full bg-[#f2b134]" />
-                    )}
-                  </motion.button>
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="w-full text-left py-4 text-[17px] font-semibold transition-colors flex items-center justify-between text-neutral-300 border-b border-neutral-800/40"
+                    >
+                      <span>{item.label}</span>
+                    </Link>
+                  </motion.div>
                 ))}
 
                 <motion.div initial={{ opacity: 0, x: -15 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.25 }}>
@@ -950,7 +950,7 @@ export default function Page() {
               <path d="M14 4v11"/>
             </svg>
           </span>
-          <span className="font-display tracking-[0.24rem] text-xs md:text-[13px] font-bold">A TO Z APPLIANCES REPAIR DUBAI</span>
+          <span className="font-display tracking-[0.24rem] text-xs md:text-[13px] font-bold">WASHING MACHINE EXPERTS DUBAI</span>
         </motion.div>
 
         {/* MASSIVE TYPOGRAPHY DISPLAY LINES */}
@@ -1034,7 +1034,7 @@ export default function Page() {
           transition={{ duration: 0.8, delay: 0.75 }}
           className="text-neutral-600 text-center max-w-3xl px-6 mt-8 md:mt-11 select-none text-[15px] sm:text-base md:text-lg lg:text-[20px] font-normal leading-relaxed tracking-normal"
         >
-          Are you searching for a washing machine repair in Dubai! At A To Z Appliances Repair, we provide a complete washing machine repair and service solution in Dubai
+          Are you searching for a washing machine repair in Dubai! At Washing Machine Experts, we provide a complete washing machine repair and service solution in Dubai
         </motion.p>
 
         <motion.div
@@ -1107,7 +1107,7 @@ export default function Page() {
 
               {/* Description Paragraph */}
               <p className="text-neutral-300 font-sans text-[15px] sm:text-base leading-relaxed tracking-normal max-w-xl mb-10 font-normal">
-                A To Z Appliances Repair provides professional washing machine repair services across Dubai. Our certified technicians handle all major brands with genuine spare parts and a commitment to same-day service.
+                Washing Machine Experts provides professional washing machine repair services across Dubai. Our certified technicians handle all major brands with genuine spare parts and a commitment to same-day service.
               </p>
 
               {/* Buttons Row with specialized arrows */}
@@ -1634,7 +1634,7 @@ export default function Page() {
                   Service Overview:
                 </h2>
                 <p className="text-neutral-650 text-[15px] sm:text-base md:text-[17px] leading-relaxed font-sans max-w-2xl">
-                  A To Z Appliances Repair Dubai offers professional washing machine repair services for all major brands including Samsung, LG, Bosch, Siemens, Whirlpool, and more. Our certified technicians provide same-day washing machine repair across all Dubai areas with genuine OEM spare parts and a service warranty.
+                  Washing Machine Experts Dubai offers professional washing machine repair services for all major brands including Samsung, LG, Bosch, Siemens, Whirlpool, and more. Our certified technicians provide same-day washing machine repair across all Dubai areas with genuine OEM spare parts and a service warranty.
                 </p>
               </div>
 
@@ -2310,7 +2310,7 @@ export default function Page() {
               <div className="relative h-28 w-80">
                 <Image
                   src="https://res.cloudinary.com/dbvjzyevy/image/upload/v1782108374/Red_and_Yellow_Modern_Simple_Application_Logogram_250_x_150_px_1_svnokc.png"
-                  alt="A To Z Appliances Repair Logo"
+                  alt="Washing Machine Experts Logo"
                   fill
                   className="object-contain object-left"
                   referrerPolicy="no-referrer"

@@ -199,14 +199,14 @@ export default function DrumRepairPage() {
         >
           <div className="flex items-center">
             <Link href="/" className="relative h-18 w-56 sm:h-24 sm:w-72 md:w-80 -my-5 sm:-my-7 flex items-center cursor-pointer select-none z-10 transition-transform hover:scale-[1.02]">
-              <Image src={LOGO_URL} alt="A To Z Appliances Repair" fill sizes="320px" className="object-contain object-left" referrerPolicy="no-referrer" priority />
+              <Image src={LOGO_URL} alt="Washing Machine Experts" fill sizes="320px" className="object-contain object-left" referrerPolicy="no-referrer" priority />
             </Link>
 
             <div className="w-[1.5px] h-6 bg-neutral-700/80 mx-4 md:mx-6 shrink-0" />
 
             <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-sans text-[18px] font-medium text-neutral-300">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
-              <Link href="/" className="hover:text-white transition-colors">About</Link>
+              <Link href="/about" className="hover:text-white transition-colors">About</Link>
 
               <div className="relative">
                 <button onClick={() => setServicesOpen(!servicesOpen)} className="hover:text-white flex items-center gap-1 cursor-pointer text-[#f2b134]">
@@ -245,8 +245,8 @@ export default function DrumRepairPage() {
                 </AnimatePresence>
               </div>
 
-              <Link href="/" className="hover:text-white transition-colors">Blog</Link>
-              <Link href="/" className="hover:text-white transition-colors">Contact</Link>
+              <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
+              <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
             </nav>
           </div>
 
@@ -297,14 +297,19 @@ export default function DrumRepairPage() {
                 </button>
               </div>
               <div className="px-6 py-4">
-                {['Home', 'About', 'Services', 'Contact'].map((label, idx) => (
+                {[
+                  { label: 'Home', href: '/' },
+                  { label: 'About', href: '/about' },
+                  { label: 'Blog', href: '/blog' },
+                  { label: 'Contact', href: '/contact' },
+                ].map((item, idx, arr) => (
                   <Link
-                    key={label}
-                    href="/"
+                    key={item.label}
+                    href={item.href}
                     onClick={() => setMobileOpen(false)}
-                    className={`w-full text-left py-4 text-[17px] font-semibold flex items-center justify-between text-neutral-300 ${idx < 3 ? 'border-b border-neutral-800/40' : ''}`}
+                    className={`w-full text-left py-4 text-[17px] font-semibold flex items-center justify-between text-neutral-300 ${idx < arr.length - 1 ? 'border-b border-neutral-800/40' : ''}`}
                   >
-                    {label}
+                    {item.label}
                   </Link>
                 ))}
               </div>
@@ -1124,7 +1129,7 @@ export default function DrumRepairPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
             <div className="flex flex-col gap-5">
               <div className="relative h-28 w-80">
-                <Image src={LOGO_URL} alt="A To Z Appliances Repair Logo" fill className="object-contain object-left" referrerPolicy="no-referrer" />
+                <Image src={LOGO_URL} alt="Washing Machine Experts Logo" fill className="object-contain object-left" referrerPolicy="no-referrer" />
               </div>
               <p className="text-neutral-500 text-[13px] leading-relaxed">
                 Dubai&apos;s trusted washing machine repair service. Same-day repairs with genuine parts and certified technicians.
