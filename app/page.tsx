@@ -865,32 +865,52 @@ export default function Page() {
                   </motion.div>
                 ))}
 
+                {/* Services Dropdown */}
                 <motion.div initial={{ opacity: 0, x: -15 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.25 }}>
-                  <p className="pt-4 pb-2 text-[11px] font-mono uppercase tracking-widest text-neutral-500">Services</p>
-                  <div className="flex flex-col gap-1">
-                    {[
-                      { title: 'Drainage Repair', icon: <Droplets className="h-4 w-4" />, href: '/drainage-repair' },
-                      { title: 'Spin Cycle Repair', icon: <RotateCw className="h-4 w-4" />, href: '/spin-cycle-repair' },
-                      { title: 'Water Leakage Repair', icon: <ShieldCheck className="h-4 w-4" />, href: '/water-leakage-repair' },
-                      { title: 'Drum Repair', icon: <Wrench className="h-4 w-4" />, href: '/drum-repair' },
-                      { title: 'Door Lock Repair', icon: <Lock className="h-4 w-4" />, href: '/door-lock-repair' },
-                      { title: 'Noise Repair', icon: <Volume2 className="h-4 w-4" />, href: '/noise-repair' },
-                      { title: 'Power Fault Repair', icon: <Zap className="h-4 w-4" />, href: '/power-fault-repair' },
-                      { title: 'Water Inlet Repair', icon: <Droplet className="h-4 w-4" />, href: '/water-inlet-repair' },
-                    ].map((service) => (
-                      <Link
-                        key={service.title}
-                        href={service.href}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className="flex items-center gap-3 px-2 py-3 rounded-xl hover:bg-neutral-800 transition-all group"
+                  <button
+                    onClick={() => setIsPagesDropdownOpen(!isPagesDropdownOpen)}
+                    className="w-full text-left py-4 text-[17px] font-semibold flex items-center justify-between text-neutral-300 border-b border-neutral-800/40"
+                  >
+                    <span>Services</span>
+                    <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${isPagesDropdownOpen ? 'rotate-180 text-[#f2b134]' : ''}`} />
+                  </button>
+
+                  <AnimatePresence initial={false}>
+                    {isPagesDropdownOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25, ease: 'easeInOut' }}
+                        className="overflow-hidden"
                       >
-                        <span className="w-8 h-8 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
-                          {service.icon}
-                        </span>
-                        <span className="text-[15px] font-medium text-neutral-300 group-hover:text-white transition-colors">{service.title}</span>
-                      </Link>
-                    ))}
-                  </div>
+                        <div className="flex flex-col gap-1 pt-2 pb-3">
+                          {[
+                            { title: 'Drainage Repair', icon: <Droplets className="h-4 w-4" />, href: '/drainage-repair' },
+                            { title: 'Spin Cycle Repair', icon: <RotateCw className="h-4 w-4" />, href: '/spin-cycle-repair' },
+                            { title: 'Water Leakage Repair', icon: <ShieldCheck className="h-4 w-4" />, href: '/water-leakage-repair' },
+                            { title: 'Drum Repair', icon: <Wrench className="h-4 w-4" />, href: '/drum-repair' },
+                            { title: 'Door Lock Repair', icon: <Lock className="h-4 w-4" />, href: '/door-lock-repair' },
+                            { title: 'Noise Repair', icon: <Volume2 className="h-4 w-4" />, href: '/noise-repair' },
+                            { title: 'Power Fault Repair', icon: <Zap className="h-4 w-4" />, href: '/power-fault-repair' },
+                            { title: 'Water Inlet Repair', icon: <Droplet className="h-4 w-4" />, href: '/water-inlet-repair' },
+                          ].map((service) => (
+                            <Link
+                              key={service.title}
+                              href={service.href}
+                              onClick={() => setIsMobileMenuOpen(false)}
+                              className="flex items-center gap-3 px-2 py-3 rounded-xl hover:bg-neutral-800 transition-all group"
+                            >
+                              <span className="w-8 h-8 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
+                                {service.icon}
+                              </span>
+                              <span className="text-[15px] font-medium text-neutral-300 group-hover:text-white transition-colors">{service.title}</span>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               </div>
 

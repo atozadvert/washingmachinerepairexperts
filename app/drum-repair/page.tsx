@@ -185,6 +185,7 @@ const FAQS = [
 
 export default function DrumRepairPage() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = React.useState(false);
   const [servicesOpen, setServicesOpen] = React.useState(false);
   const [openFaq, setOpenFaq] = React.useState<number | null>(0);
 
@@ -302,16 +303,53 @@ export default function DrumRepairPage() {
                   { label: 'About', href: '/about' },
                   { label: 'Blog', href: '/blog' },
                   { label: 'Contact', href: '/contact' },
-                ].map((item, idx, arr) => (
+                ].map((item, idx) => (
                   <Link
                     key={item.label}
                     href={item.href}
                     onClick={() => setMobileOpen(false)}
-                    className={`w-full text-left py-4 text-[17px] font-semibold flex items-center justify-between text-neutral-300 ${idx < arr.length - 1 ? 'border-b border-neutral-800/40' : ''}`}
+                    className="w-full text-left py-4 text-[17px] font-semibold flex items-center justify-between text-neutral-300 border-b border-neutral-800/40"
                   >
                     {item.label}
                   </Link>
                 ))}
+
+                {/* Services Dropdown */}
+                <button
+                  onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                  className="w-full text-left py-4 text-[17px] font-semibold flex items-center justify-between text-neutral-300 border-b border-neutral-800/40"
+                >
+                  <span>Services</span>
+                  <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${mobileServicesOpen ? 'rotate-180 text-[#f2b134]' : ''}`} />
+                </button>
+
+                <AnimatePresence initial={false}>
+                  {mobileServicesOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.25, ease: 'easeInOut' }}
+                      className="overflow-hidden"
+                    >
+                      <div className="flex flex-col gap-1 pt-2 pb-3">
+                        {NAV_SERVICES.map((s) => (
+                          <Link
+                            key={s.title}
+                            href={s.href}
+                            onClick={() => setMobileOpen(false)}
+                            className="flex items-center gap-3 px-2 py-3 rounded-xl hover:bg-neutral-800 transition-all group"
+                          >
+                            <span className="w-8 h-8 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
+                              {s.icon}
+                            </span>
+                            <span className="text-[15px] font-medium text-neutral-300 group-hover:text-white transition-colors">{s.title}</span>
+                          </Link>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
               <div className="px-6 pb-6 pt-2 flex flex-col gap-3">
                 <a href={`tel:${PHONE}`} style={{ backgroundColor: '#f2b134' }} className="w-full py-4 rounded-2xl font-bold text-neutral-900 flex items-center justify-center gap-2.5 text-[15px] shadow-lg">
