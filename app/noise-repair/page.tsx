@@ -55,93 +55,93 @@ const NAV_SERVICES = [
 
 const SYMPTOMS = [
   {
-    icon: <Waves className="h-5 w-5" />,
-    title: 'Water Stuck in the Drum',
-    desc: 'The cycle finishes but water remains pooled inside — a classic sign of a blocked drain path or failed pump.',
-  },
-  {
-    icon: <Filter className="h-5 w-5" />,
-    title: 'Slow or Partial Draining',
-    desc: 'Water leaves the machine far slower than usual, often caused by a clogged filter or kinked drain hose.',
-  },
-  {
-    icon: <AlertTriangle className="h-5 w-5" />,
-    title: 'Error Codes on Display',
-    desc: 'Drain-related fault codes (5E, 5C, OE, F05) appear and halt the wash mid-cycle.',
+    icon: <Volume2 className="h-5 w-5" />,
+    title: 'Loud Banging During Spin',
+    desc: 'The machine bangs or thumps loudly when spinning. Worn shock absorbers or loose counterweights are the usual cause.',
   },
   {
     icon: <Gauge className="h-5 w-5" />,
-    title: 'Loud Humming While Draining',
-    desc: 'A straining or buzzing pump that never clears water usually points to debris or a worn impeller.',
+    title: 'Grinding or Scraping Sound',
+    desc: 'A harsh metal-on-metal noise during the wash often means the drum bearings have worn out.',
   },
   {
-    icon: <Droplets className="h-5 w-5" />,
-    title: 'Foul Smell from the Drum',
-    desc: 'Trapped water and lint build-up in the filter create bad odours and unhygienic wash results.',
+    icon: <AlertTriangle className="h-5 w-5" />,
+    title: 'High-Pitched Squealing',
+    desc: 'A squealing or screeching noise points to a worn drive belt or a dry bearing that needs attention.',
+  },
+  {
+    icon: <Waves className="h-5 w-5" />,
+    title: 'Buzzing or Humming When Idle',
+    desc: 'The machine hums even when not running. A faulty motor, pump or valve may be the reason.',
+  },
+  {
+    icon: <Filter className="h-5 w-5" />,
+    title: 'Rattling from Inside the Drum',
+    desc: 'Small objects like coins, buttons or bra wires trapped between the drum and tub cause rattling sounds.',
   },
   {
     icon: <RotateCw className="h-5 w-5" />,
-    title: 'Spin Cycle Won’t Start',
-    desc: 'Machines refuse to spin until they fully drain — leaving your laundry soaking wet.',
+    title: 'Vibrating and Moving Across the Floor',
+    desc: 'The machine shakes hard and walks out of position. Uneven legs or worn suspension springs are common causes.',
   },
 ];
 
 const CAUSES = [
-  'Blocked drain pump filter clogged with lint, coins or hair',
-  'Kinked, twisted or improperly installed drain hose',
-  'Faulty or burnt-out drain pump motor',
-  'Damaged pressure sensor reading water levels incorrectly',
-  'Build-up of detergent residue inside internal pipes',
-  'Blocked household standpipe or sink waste connection',
+  'Worn drum bearings causing grinding and rumbling sounds',
+  'Loose or cracked counterweight blocks',
+  'Damaged shock absorbers that no longer control drum movement',
+  'Foreign objects trapped between the inner and outer drum',
+  'Worn or stretched drive belt slipping on the motor pulley',
+  'Uneven machine legs causing the drum to wobble during spin',
 ];
 
 const PROCESS = [
   {
     icon: <Phone className="h-5 w-5" />,
     title: 'Contact & Booking',
-    desc: 'Call or message us and we confirm a same-day slot for your drainage repair anywhere in Dubai.',
+    desc: 'Call or message us and we book a same-day slot for your noise repair anywhere in Dubai.',
   },
   {
     icon: <Truck className="h-5 w-5" />,
     title: 'Technician Dispatch',
-    desc: 'A certified drainage specialist arrives at your door fully equipped with pumps, filters and seals.',
+    desc: 'A certified technician arrives at your door with bearings, belts, shock absorbers and tools ready.',
   },
   {
     icon: <Search className="h-5 w-5" />,
     title: 'On-Site Diagnosis',
-    desc: 'We inspect the filter, hose, pump and sensor to pinpoint the exact cause — then share a transparent quote.',
+    desc: 'We run the machine, listen to the noise and inspect the drum, motor and suspension to find the exact fault — then share a clear quote.',
   },
   {
     icon: <Wrench className="h-5 w-5" />,
     title: 'Professional Repair',
-    desc: 'The fault is fixed using genuine OEM parts: clearing blockages, replacing pumps or restoring drain flow.',
+    desc: 'The faulty part is replaced using genuine OEM components so your machine runs quietly again.',
   },
   {
     icon: <ClipboardCheck className="h-5 w-5" />,
     title: 'Full Cycle Test',
-    desc: 'We run a complete drain and spin test to confirm water clears smoothly before we finish.',
+    desc: 'We run a full wash and spin cycle to make sure all unusual noise is gone before we leave.',
   },
   {
     icon: <BadgeCheck className="h-5 w-5" />,
     title: 'Service Warranty',
-    desc: 'Every drainage repair is backed by a written warranty covering both parts and labour.',
+    desc: 'Every noise repair is backed by a written warranty covering both parts and labour.',
   },
 ];
 
 const INCLUDED = [
-  'Complete drain pump inspection & cleaning',
-  'Filter de-clogging and debris removal',
-  'Drain hose & standpipe flush-through',
-  'Pressure sensor diagnostic test',
-  'Genuine OEM pump replacement (if required)',
-  'Full drain + spin verification cycle',
+  'Full drum bearing inspection and test',
+  'Shock absorber and suspension spring check',
+  'Drive belt tension and condition assessment',
+  'Counterweight and mounting bolt inspection',
+  'Foreign object removal from drum cavity',
+  'Full wash and spin cycle noise verification',
 ];
 
 const WHY = [
   {
     icon: <Timer className="h-6 w-6" />,
     title: 'Same-Day Service',
-    desc: 'Most drainage faults are diagnosed and fixed within a single visit across all Dubai areas.',
+    desc: 'Most noise faults are diagnosed and fixed within a single visit across all Dubai areas.',
   },
   {
     icon: <ShieldCheck className="h-6 w-6" />,
@@ -162,28 +162,28 @@ const WHY = [
 
 const FAQS = [
   {
-    q: 'How much does a washing machine drainage repair cost in Dubai?',
-    a: 'A standard drainage repair starts from an affordable call-out and diagnosis fee. Once our technician identifies the exact cause on-site, you receive a transparent fixed quote before any work begins — so you always approve the price first.',
+    q: 'How much does a washing machine noise repair cost in Dubai?',
+    a: 'It depends on the cause. We charge an affordable call-out fee and give you a fixed quote on-site before any work begins. No surprises.',
   },
   {
-    q: 'Can you fix the drainage problem on the same day?',
-    a: 'Yes. The majority of drainage and pump faults — blocked filters, clogged hoses and worn pumps — are resolved in a single same-day visit anywhere in Dubai, as our vans carry common parts in stock.',
+    q: 'Can you fix a noisy washing machine on the same day?',
+    a: 'Yes. Most noise problems including worn bearings, loose parts and trapped objects are fixed in a single same-day visit across Dubai.',
+  },
+  {
+    q: 'Is it safe to keep using a noisy washing machine?',
+    a: 'We recommend getting it checked soon. A small noise can quickly turn into a bigger fault that damages the drum or motor and costs more to fix.',
   },
   {
     q: 'Which brands do you repair?',
-    a: 'We service all major brands including Samsung, LG, Bosch, Siemens, Whirlpool, Hoover and 20+ others, covering both front-load and top-load washing machines.',
+    a: 'We service all major brands including Samsung, LG, Bosch, Siemens, Whirlpool, Haier and 20 plus others.',
   },
   {
-    q: 'Do you provide a warranty on drainage repairs?',
-    a: 'Absolutely. Every drainage repair comes with a written service warranty covering both the replaced parts and the labour, giving you complete peace of mind.',
-  },
-  {
-    q: 'Is it safe to keep using my machine if it won’t drain?',
-    a: 'We recommend stopping use until it’s inspected. A machine that won’t drain can overflow, damage the pump further and leak onto your floor — a quick diagnosis prevents bigger repair bills.',
+    q: 'Do you provide a warranty on noise repairs?',
+    a: 'Yes. Every repair comes with a written warranty covering both the replaced parts and the labour.',
   },
 ];
 
-export default function DrainageRepairPage() {
+export default function NoiseRepairPage() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = React.useState(false);
   const [servicesOpen, setServicesOpen] = React.useState(false);
@@ -372,30 +372,28 @@ export default function DrainageRepairPage() {
           <ChevronRight className="h-3.5 w-3.5" />
           <span className="text-neutral-400">Services</span>
           <ChevronRight className="h-3.5 w-3.5" />
-          <span className="text-[#c8901f]">Drainage Repair</span>
+          <span className="text-[#c8901f]">Noise Repair</span>
         </nav>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center">
           {/* Left */}
           <div className="flex flex-col items-start">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1E1E1E] text-[#f2b134] text-[11px] font-mono uppercase tracking-widest mb-6">
-              <Droplets className="h-3.5 w-3.5" />
-              <span>Drainage &amp; Pump Repair</span>
+              <Volume2 className="h-3.5 w-3.5" />
+              <span>Noise &amp; Vibration Repair</span>
             </div>
 
             <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-[56px] leading-[1.05] tracking-tight text-neutral-900 mb-6">
               Washing Machine{' '}
               <span className="relative inline-block">
-                <span className="relative z-10">Drainage Repair</span>
+                <span className="relative z-10">Noise Repair</span>
                 <span className="absolute bottom-1.5 left-0 right-0 h-3.5 bg-[#f2b134]/40 -rotate-1 z-0" />
               </span>{' '}
               in Dubai
             </h1>
 
             <p className="text-neutral-600 text-[15px] sm:text-[17px] leading-relaxed max-w-xl mb-8">
-              Water trapped in the drum, slow draining or error codes? Our certified technicians
-              diagnose and fix every drainage and pump fault — same day, with genuine OEM parts and
-              a full service warranty.
+              Loud banging, grinding sounds or heavy vibration? Our certified technicians find and fix every washing machine noise fault — same day, with genuine OEM parts and a full service warranty.
             </p>
 
             <div className="flex flex-wrap items-center gap-3.5 mb-9">
@@ -440,7 +438,7 @@ export default function DrainageRepairPage() {
             <div className="relative aspect-[4/3.4] w-full rounded-[2rem] overflow-hidden border border-neutral-200 shadow-2xl">
               <Image
                 src="/Washing Machine Noise Repair Hero Section.png"
-                alt="Washing machine drainage repair in Dubai"
+                alt="washing machine noise repair in Dubai"
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 className="object-cover"
@@ -458,7 +456,7 @@ export default function DrainageRepairPage() {
                 <Gauge className="h-6 w-6" />
               </div>
               <div>
-                <p className="text-2xl font-extrabold font-display text-neutral-900 leading-none">~90 min</p>
+                <p className="text-2xl font-extrabold font-display text-neutral-900 leading-none">~75 min</p>
                 <p className="text-xs text-neutral-500 mt-1">Average repair time</p>
               </div>
             </motion.div>
@@ -480,9 +478,9 @@ export default function DrainageRepairPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6">
             {[
-              { value: '5,000+', label: 'Drainage repairs completed' },
+              { value: '4,200+', label: 'Noise repairs completed' },
               { value: '20+', label: 'Brands serviced' },
-              { value: '90 min', label: 'Average fix time' },
+              { value: '75 min', label: 'Average fix time' },
               { value: '4.9★', label: 'Customer rating' },
             ].map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
@@ -504,11 +502,10 @@ export default function DrainageRepairPage() {
               <span>↳ Warning Signs</span>
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-[44px] tracking-tight text-neutral-900 leading-[1.1] mb-4">
-              Signs You Need a Drainage Repair
+              Signs You Need a Noise Repair
             </h2>
             <p className="text-neutral-600 text-[15px] sm:text-base leading-relaxed">
-              If your washing machine shows any of these symptoms, the drain pump or hose likely needs
-              professional attention. Spotting them early prevents costly water damage.
+              If your washing machine is making unusual sounds, something inside needs attention. Catching noise problems early prevents bigger and more costly damage.
             </p>
           </div>
 
@@ -557,7 +554,7 @@ export default function DrainageRepairPage() {
             <div className="relative aspect-square w-full rounded-[2rem] overflow-hidden border border-neutral-200 shadow-xl">
               <Image
                 src="/What Causes Washing Machine Noise.png"
-                alt="Technician inspecting washing machine drain pump"
+                alt="Technician inspecting noisy washing machine"
                 fill
                 sizes="(max-width: 1024px) 100vw, 560px"
                 className="object-cover"
@@ -570,12 +567,10 @@ export default function DrainageRepairPage() {
               <span>↳ Root Causes</span>
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl tracking-tight text-neutral-900 leading-[1.1] mb-6">
-              What Causes Drainage Problems?
+              What Causes Washing Machine Noise?
             </h2>
             <p className="text-neutral-600 text-[15px] sm:text-base leading-relaxed mb-8">
-              A washing machine that won&apos;t drain almost always traces back to one of a handful of
-              culprits. Our technicians check each one methodically to find the real fault — not just
-              the symptom.
+              A noisy washing machine usually comes down to a handful of common faults. Our technicians check each one carefully to find and fix the real cause.
             </p>
             <ul className="flex flex-col gap-4">
               {CAUSES.map((c) => (
@@ -601,7 +596,7 @@ export default function DrainageRepairPage() {
             {/* Top row: heading left + image right */}
             <div className="flex items-start gap-4">
               <h2 className="font-display font-extrabold text-[26px] sm:text-4xl text-neutral-900 leading-[1.12] tracking-tight flex-1 mt-6 sm:mt-8">
-                Washing machine won&apos;t drain? <span className="text-[#c8901f]">We&apos;ll fix it today.</span>
+                Machine making loud noise? <span className="text-[#c8901f]">We&apos;ll fix it today.</span>
               </h2>
               <div className="relative w-40 h-40 sm:w-48 sm:h-48 shrink-0 -mt-4 -mr-1">
                 <Image
@@ -615,7 +610,7 @@ export default function DrainageRepairPage() {
             </div>
 
             <p className="text-neutral-600 text-[15px] sm:text-base leading-relaxed">
-              Book a same-day drainage repair with Dubai&apos;s trusted technicians. Transparent pricing,
+              Book a same-day noise repair with Dubai&apos;s trusted technicians. Transparent pricing,
               genuine parts and a full warranty — guaranteed.
             </p>
 
@@ -642,10 +637,10 @@ export default function DrainageRepairPage() {
           <div className="hidden lg:flex relative z-10 flex-row items-center justify-between gap-8">
             <div className="max-w-xl">
               <h2 className="font-display font-extrabold text-[44px] text-neutral-900 leading-[1.1] tracking-tight mb-4">
-                Washing machine won&apos;t drain? <span className="text-[#c8901f]">We&apos;ll fix it today.</span>
+                Machine making loud noise? <span className="text-[#c8901f]">We&apos;ll fix it today.</span>
               </h2>
               <p className="text-neutral-600 text-base leading-relaxed">
-                Book a same-day drainage repair with Dubai&apos;s trusted technicians. Transparent pricing,
+                Book a same-day noise repair with Dubai&apos;s trusted technicians. Transparent pricing,
                 genuine parts and a full warranty — guaranteed.
               </p>
             </div>
@@ -690,11 +685,10 @@ export default function DrainageRepairPage() {
               <span>↳ How It Works</span>
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-[44px] tracking-tight text-neutral-900 leading-[1.1] mb-4">
-              Our Drainage Repair Process
+              Our Noise Repair Process
             </h2>
             <p className="text-neutral-600 text-[15px] sm:text-base leading-relaxed">
-              A clear, six-step process designed to get your washing machine draining perfectly again —
-              with no guesswork and no hidden costs.
+              A clear, six-step process to find and fix the cause of your washing machine noise — no guesswork and no hidden costs.
             </p>
           </div>
 
@@ -747,11 +741,10 @@ export default function DrainageRepairPage() {
               <span>↳ Whats Included</span>
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-[44px] tracking-tight text-neutral-900 leading-[1.1] mb-6">
-              A Complete Drainage Service
+              A Complete Noise Repair Service
             </h2>
             <p className="text-neutral-600 text-[15px] sm:text-base leading-relaxed mb-10 max-w-lg">
-              Every drainage repair booking includes a full inspection of the entire drain system — not
-              just a quick fix. Here&apos;s exactly what your visit covers.
+              Every noise repair includes a full inspection of the drum, motor, bearings and suspension — not just a quick look. Here is what your visit covers.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
@@ -777,7 +770,7 @@ export default function DrainageRepairPage() {
             <div className="relative aspect-[4/3] w-full rounded-[2rem] overflow-hidden border border-neutral-200 shadow-2xl">
               <Image
                 src="/Complete Washing Machine Noise Repair Service.png"
-                alt="Washing machine working perfectly after drainage repair"
+                alt="Quiet washing machine after noise repair"
                 fill
                 sizes="(max-width: 1024px) 100vw, 600px"
                 className="object-cover"
@@ -795,7 +788,7 @@ export default function DrainageRepairPage() {
               <span>↳ Why Choose Us</span>
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-[44px] tracking-tight text-neutral-900 leading-[1.1]">
-              Dubai&apos;s Drainage Repair Specialists
+              Dubai&apos;s Noise Repair Specialists
             </h2>
           </div>
 
@@ -845,19 +838,18 @@ export default function DrainageRepairPage() {
               <span>↳ Maintenance Tips</span>
             </div>
             <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-[44px] tracking-tight text-neutral-900 leading-[1.1] mb-6">
-              Keep Your Drain Flowing
+              Keep Your Machine Running Quietly
             </h2>
             <p className="text-neutral-600 text-[15px] sm:text-base leading-relaxed mb-8 max-w-lg">
-              A few simple habits keep your washing machine draining smoothly between professional
-              visits — and help you spot trouble before it becomes a costly repair.
+              A few simple habits keep your washing machine running quietly and help you catch noise problems before they get worse.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { icon: <Filter className="h-5 w-5" />, title: 'Clean the Filter Monthly', desc: 'Empty the drain pump filter to clear lint, coins and debris before they block flow.' },
-                { icon: <Waves className="h-5 w-5" />, title: 'Check Pockets First', desc: 'Remove coins, tissues and small items that often jam the pump impeller.' },
-                { icon: <Droplets className="h-5 w-5" />, title: 'Use the Right Detergent', desc: 'Avoid excess soap that leaves residue build-up inside internal pipes.' },
-                { icon: <Gauge className="h-5 w-5" />, title: 'Inspect the Drain Hose', desc: 'Keep the hose straight and kink-free so water always has a clear path out.' },
+                { icon: <Filter className="h-5 w-5" />, title: 'Check Pockets Before Washing', desc: 'Remove coins, keys and small items that can get trapped and rattle inside the drum.' },
+                { icon: <Waves className="h-5 w-5" />, title: 'Level the Machine Properly', desc: 'Make sure all four legs are firm and even. An unbalanced machine vibrates and walks during spin.' },
+                { icon: <Gauge className="h-5 w-5" />, title: 'Don\'t Overload the Drum', desc: 'Too much laundry throws the drum off balance and puts extra strain on the bearings and springs.' },
+                { icon: <Lock className="h-5 w-5" />, title: 'Listen for Changes Early', desc: 'If your machine starts sounding different, book a check before the problem gets worse and costs more.' },
               ].map((tip) => (
                 <div key={tip.title} className="bg-white border border-neutral-200/70 rounded-2xl p-5">
                   <div className="w-10 h-10 rounded-lg bg-[#f2b134]/15 flex items-center justify-center text-[#c8901f] mb-3.5">
@@ -874,7 +866,7 @@ export default function DrainageRepairPage() {
             <div className="relative aspect-[4/5] w-full rounded-[2rem] overflow-hidden border border-neutral-200 shadow-2xl">
               <Image
                 src="/Washing Machine Noise Repair.png"
-                alt="Well-maintained washing machine drain in Dubai"
+                alt="Quiet and well-maintained washing machine"
                 fill
                 sizes="(max-width: 1024px) 100vw, 560px"
                 className="object-cover"
@@ -896,14 +888,13 @@ export default function DrainageRepairPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-left max-w-3xl mb-12">
             <span className="text-[#f2b134] font-mono text-[11px] tracking-widest uppercase mb-3 block">
-              DRAINAGE DIAGNOSTIC &amp; REPAIR BENCHMARKS
+              NOISE DIAGNOSTIC &amp; REPAIR BENCHMARKS
             </span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl text-neutral-900 tracking-tight leading-none mb-4">
-              Drainage Fault &amp; Repair Matrix
+              Noise Fault &amp; Repair Matrix
             </h2>
             <p className="text-neutral-500 text-sm sm:text-base leading-relaxed font-sans">
-              A clear breakdown of the most common drainage faults we resolve, the genuine OEM parts
-              involved, and realistic speed benchmarks for getting your machine draining again.
+              A clear breakdown of the most common noise faults we fix, the genuine OEM parts used, and how fast we get your machine running quietly again.
             </p>
           </div>
 
@@ -912,7 +903,7 @@ export default function DrainageRepairPage() {
             <table className="w-full table-auto border-collapse text-left font-sans">
               <thead>
                 <tr className="bg-neutral-50/75 border-b border-neutral-200/30 text-neutral-450 text-xs font-mono uppercase tracking-wider">
-                  <th className="py-5 px-6 font-bold">Drainage Fault</th>
+                  <th className="py-5 px-6 font-bold">Noise Fault</th>
                   <th className="py-5 px-6 font-bold">Symptom &amp; Scope</th>
                   <th className="py-5 px-6 font-bold">Genuine Parts &amp; Fix</th>
                   <th className="py-5 px-6 font-bold text-center">Service Speed</th>
@@ -920,11 +911,11 @@ export default function DrainageRepairPage() {
               </thead>
               <tbody className="text-sm text-neutral-650 divide-y divide-neutral-100">
                 {[
-                  { num: '01', name: 'Drain Pump Failure', problem: 'Machine hums but no water drains; pump motor burnt out or jammed by debris.', parts: 'High-Flow OEM Drain Pump & Impeller Assembly', speed: 'Same Day', color: 'emerald', pulse: true },
-                  { num: '02', name: 'Blocked Pump Filter', problem: 'Slow or partial draining, trapped lint and coins, foul odour from the drum.', parts: 'Filter Clean-Out, Gasket Reseal & Flow Test', speed: 'Same Day', color: 'amber', pulse: false },
-                  { num: '03', name: 'Drain Hose Blockage', problem: 'Kinked, twisted or clogged hose stopping water from leaving the machine.', parts: 'Hose Replacement & Standpipe Pressure Flush', speed: 'Same Day', color: 'blue', pulse: false },
-                  { num: '04', name: 'Pressure Sensor Fault', problem: 'Incorrect water-level readings causing it to not drain or to overfill.', parts: 'OEM Pressure Switch & Sensor Recalibration', speed: '24-48 Hours', color: 'violet', pulse: false },
-                  { num: '05', name: 'Standpipe / Waste Block', problem: 'Household waste line backflow forcing dirty water into the machine.', parts: 'Waste Line Clearing & Anti-Backflow Check', speed: 'Same Day', color: 'neutral', pulse: false },
+                  { num: '01', name: 'Worn Drum Bearings', problem: 'Loud grinding or rumbling during spin; bearings have worn through.', parts: 'OEM Drum Bearing Kit & Seal Set', speed: 'Same Day', color: 'emerald', pulse: true },
+                  { num: '02', name: 'Loose Counterweight', problem: 'Heavy banging during wash; concrete block has cracked or bolts loosened.', parts: 'Counterweight Reseat & Bolt Torque', speed: 'Same Day', color: 'amber', pulse: false },
+                  { num: '03', name: 'Damaged Shock Absorbers', problem: 'Excessive vibration and drum hitting the cabinet during spin cycle.', parts: 'OEM Shock Absorber Pair & Mounting Pins', speed: 'Same Day', color: 'blue', pulse: false },
+                  { num: '04', name: 'Worn Drive Belt', problem: 'Squealing or screeching noise from the motor area during spin.', parts: 'OEM Drive Belt & Pulley Inspection', speed: 'Same Day', color: 'violet', pulse: false },
+                  { num: '05', name: 'Foreign Object in Drum', problem: 'Rattling, clicking or scraping caused by trapped coins or wires.', parts: 'Drum Cavity Clearance & Object Removal', speed: 'Same Day', color: 'neutral', pulse: false },
                 ].map((row) => (
                   <tr key={row.num} className="hover:bg-neutral-50/40 transition-colors duration-150">
                     <td className="py-5 px-6 font-bold text-neutral-900 font-display text-[15px]">
@@ -951,11 +942,11 @@ export default function DrainageRepairPage() {
           {/* Mobile Card Layout */}
           <div className="md:hidden flex flex-col gap-4">
             {[
-              { num: '01', name: 'Drain Pump Failure', problem: 'Machine hums but no water drains; pump motor burnt out or jammed by debris.', parts: 'High-Flow OEM Drain Pump & Impeller Assembly', speed: 'Same Day', dotColor: 'bg-emerald-500', badgeBg: 'bg-emerald-50', badgeText: 'text-emerald-700', badgeBorder: 'border-emerald-100/50' },
-              { num: '02', name: 'Blocked Pump Filter', problem: 'Slow or partial draining, trapped lint and coins, foul odour from the drum.', parts: 'Filter Clean-Out, Gasket Reseal & Flow Test', speed: 'Same Day', dotColor: 'bg-amber-500', badgeBg: 'bg-amber-50', badgeText: 'text-amber-700', badgeBorder: 'border-amber-100/50' },
-              { num: '03', name: 'Drain Hose Blockage', problem: 'Kinked, twisted or clogged hose stopping water from leaving the machine.', parts: 'Hose Replacement & Standpipe Pressure Flush', speed: 'Same Day', dotColor: 'bg-blue-500', badgeBg: 'bg-blue-50', badgeText: 'text-blue-700', badgeBorder: 'border-blue-100/50' },
-              { num: '04', name: 'Pressure Sensor Fault', problem: 'Incorrect water-level readings causing it to not drain or to overfill.', parts: 'OEM Pressure Switch & Sensor Recalibration', speed: '24-48 Hours', dotColor: 'bg-violet-400', badgeBg: 'bg-violet-50', badgeText: 'text-violet-700', badgeBorder: 'border-violet-100/50' },
-              { num: '05', name: 'Standpipe / Waste Block', problem: 'Household waste line backflow forcing dirty water into the machine.', parts: 'Waste Line Clearing & Anti-Backflow Check', speed: 'Same Day', dotColor: 'bg-neutral-500', badgeBg: 'bg-neutral-100', badgeText: 'text-neutral-700', badgeBorder: 'border-neutral-200' },
+              { num: '01', name: 'Worn Drum Bearings', problem: 'Loud grinding or rumbling during spin; bearings have worn through.', parts: 'OEM Drum Bearing Kit & Seal Set', speed: 'Same Day', dotColor: 'bg-emerald-500', badgeBg: 'bg-emerald-50', badgeText: 'text-emerald-700', badgeBorder: 'border-emerald-100/50' },
+              { num: '02', name: 'Loose Counterweight', problem: 'Heavy banging during wash; concrete block has cracked or bolts loosened.', parts: 'Counterweight Reseat & Bolt Torque', speed: 'Same Day', dotColor: 'bg-amber-500', badgeBg: 'bg-amber-50', badgeText: 'text-amber-700', badgeBorder: 'border-amber-100/50' },
+              { num: '03', name: 'Damaged Shock Absorbers', problem: 'Excessive vibration and drum hitting the cabinet during spin cycle.', parts: 'OEM Shock Absorber Pair & Mounting Pins', speed: 'Same Day', dotColor: 'bg-blue-500', badgeBg: 'bg-blue-50', badgeText: 'text-blue-700', badgeBorder: 'border-blue-100/50' },
+              { num: '04', name: 'Worn Drive Belt', problem: 'Squealing or screeching noise from the motor area during spin.', parts: 'OEM Drive Belt & Pulley Inspection', speed: 'Same Day', dotColor: 'bg-violet-400', badgeBg: 'bg-violet-50', badgeText: 'text-violet-700', badgeBorder: 'border-violet-100/50' },
+              { num: '05', name: 'Foreign Object in Drum', problem: 'Rattling, clicking or scraping caused by trapped coins or wires.', parts: 'Drum Cavity Clearance & Object Removal', speed: 'Same Day', dotColor: 'bg-neutral-500', badgeBg: 'bg-neutral-100', badgeText: 'text-neutral-700', badgeBorder: 'border-neutral-200' },
             ].map((row) => (
               <div key={row.num} className="bg-white border border-neutral-200/60 rounded-2xl p-5 shadow-sm">
                 <div className="flex items-start justify-between gap-3 mb-3">
@@ -1003,7 +994,7 @@ export default function DrainageRepairPage() {
               Frequently Asked Questions
             </h2>
             <p className="text-neutral-500 text-sm sm:text-base leading-relaxed font-sans">
-              Get immediate professional answers to common washing machine drainage issues and quick diagnostic guidance.
+              Get quick answers to common washing machine noise problems and expert repair guidance.
             </p>
           </div>
 
@@ -1080,7 +1071,7 @@ export default function DrainageRepairPage() {
                 {"Let's Fix it."}
               </h3>
               <p className="text-neutral-500 text-[15px] sm:text-base leading-relaxed font-sans max-w-md mt-2">
-                Fill in the form and our team will get back to you within 30 minutes. Same-day washing machine drainage repair available across all areas in Dubai.
+                Fill in the form and our team will get back to you within 30 minutes. Same-day washing machine noise repair available across all areas in Dubai.
               </p>
 
               <div className="flex flex-col gap-3 mt-4">
@@ -1122,7 +1113,7 @@ export default function DrainageRepairPage() {
 
                 <div className="flex flex-col gap-1.5">
                   <label className="text-sm font-bold text-neutral-800">Message</label>
-                  <textarea rows={5} placeholder="Describe your drainage issue (e.g. water not draining, slow drain, error code...)" className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#f2b134] focus:border-transparent transition-all placeholder-neutral-400 resize-y" />
+                  <textarea rows={5} placeholder="Describe the noise your machine makes (e.g. banging, grinding, squealing, vibrating...)" className="w-full bg-white border border-neutral-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#f2b134] focus:border-transparent transition-all placeholder-neutral-400 resize-y" />
                 </div>
 
                 <div className="flex items-center justify-between flex-wrap gap-4">
@@ -1178,7 +1169,7 @@ export default function DrainageRepairPage() {
               <h4 className="text-white font-semibold text-sm uppercase tracking-wider">Services</h4>
               <div className="w-8 h-0.5 bg-[#f2b134] rounded-full" />
               <ul className="flex flex-col gap-2.5 text-neutral-500 text-[13px]">
-                <li className="text-[#f2b134]">Drainage &amp; Pump Repair</li>
+                <li className="text-[#f2b134]">Noise Repair</li>
                 <Link href="/spin-cycle-repair"><li className="hover:text-[#f2b134] hover:translate-x-1 transition-all cursor-pointer">Spin Cycle Repair</li></Link>
                 <Link href="/water-leakage-repair"><li className="hover:text-[#f2b134] hover:translate-x-1 transition-all cursor-pointer">Water Leakage Repair</li></Link>
                 <Link href="/drum-repair"><li className="hover:text-[#f2b134] hover:translate-x-1 transition-all cursor-pointer">Drum Repair</li></Link>
