@@ -18,6 +18,15 @@ import {
   Volume2,
   Zap,
   Droplet,
+  Settings,
+  Cpu,
+  Building2,
+  Box,
+  CircleDot,
+  Hand,
+  Cloud,
+  ArrowUpCircle,
+  Columns2,
 } from 'lucide-react';
 
 export const LOGO_URL =
@@ -35,6 +44,15 @@ const NAV_SERVICES = [
   { title: 'Noise Repair', icon: <Volume2 className="h-4 w-4" />, href: '/noise-repair' },
   { title: 'Power Fault Repair', icon: <Zap className="h-4 w-4" />, href: '/power-fault-repair' },
   { title: 'Water Inlet Repair', icon: <Droplet className="h-4 w-4" />, href: '/water-inlet-repair' },
+  { title: 'Automatic Washing Machine Repair', icon: <Settings className="h-4 w-4" />, href: '/automatic-washing-machine-repair' },
+  { title: 'Inverter Motor Washing Machine Repair', icon: <Cpu className="h-4 w-4" />, href: '/inverter-motor-washing-machine-repair' },
+  { title: 'Commercial Washing Machine Repair', icon: <Building2 className="h-4 w-4" />, href: '/commercial-washing-machine-repair' },
+  { title: 'Freestanding Washing Machine Repair', icon: <Box className="h-4 w-4" />, href: '/freestanding-washing-machine-repair' },
+  { title: 'Front Load Washing Machine Repair', icon: <CircleDot className="h-4 w-4" />, href: '/front-load-washing-machine-repair' },
+  { title: 'Manual Washing Machine Repair', icon: <Hand className="h-4 w-4" />, href: '/manual-washing-machine-repair' },
+  { title: 'Steam Wash Washing Machine Repair', icon: <Cloud className="h-4 w-4" />, href: '/steam-wash-washing-machine-repair' },
+  { title: 'Top Load Washing Machine Repair', icon: <ArrowUpCircle className="h-4 w-4" />, href: '/top-load-washing-machine-repair' },
+  { title: 'Twin Tub Washing Machine Repair', icon: <Columns2 className="h-4 w-4" />, href: '/twin-tub-washing-machine-repair' },
 ];
 
 type ActivePage = 'home' | 'about' | 'blog' | 'contact' | 'services' | null;
@@ -91,7 +109,7 @@ export default function SiteHeader({ active = null }: { active?: ActivePage }) {
                     >
                       <div className="px-1 pb-3 mb-3 border-b border-neutral-800 flex items-center justify-between">
                         <span className="text-neutral-500 font-mono text-[10px] tracking-wider uppercase">Our Services</span>
-                        <span className="text-[#f2b134] text-[10px] font-mono">8 Services</span>
+                        <span className="text-[#f2b134] text-[10px] font-mono">17 Services</span>
                       </div>
                       <div className="grid grid-cols-2 gap-2">
                         {NAV_SERVICES.map((s) => (

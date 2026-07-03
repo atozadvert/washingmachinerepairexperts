@@ -34,6 +34,15 @@ import {
   Volume2,
   Zap,
   Droplet,
+  Settings,
+  Cpu,
+  Building2,
+  Box,
+  CircleDot,
+  Hand,
+  Cloud,
+  ArrowUpCircle,
+  Columns2,
 } from 'lucide-react';
 
 const LOGO_URL =
@@ -51,6 +60,15 @@ const NAV_SERVICES = [
   { title: 'Noise Repair', icon: <Volume2 className="h-4 w-4" />, href: '/noise-repair' },
   { title: 'Power Fault Repair', icon: <Zap className="h-4 w-4" />, href: '/power-fault-repair' },
   { title: 'Water Inlet Repair', icon: <Droplet className="h-4 w-4" />, href: '/water-inlet-repair', active: true },
+  { title: 'Automatic Repair', icon: <Settings className="h-4 w-4" />, href: '/automatic-washing-machine-repair' },
+  { title: 'Inverter Repair', icon: <Cpu className="h-4 w-4" />, href: '/inverter-motor-washing-machine-repair' },
+  { title: 'Commercial Repair', icon: <Building2 className="h-4 w-4" />, href: '/commercial-washing-machine-repair' },
+  { title: 'Freestanding Repair', icon: <Box className="h-4 w-4" />, href: '/freestanding-washing-machine-repair' },
+  { title: 'Front-Load Repair', icon: <CircleDot className="h-4 w-4" />, href: '/front-load-washing-machine-repair' },
+  { title: 'Manual Repair', icon: <Hand className="h-4 w-4" />, href: '/manual-washing-machine-repair' },
+  { title: 'Steam Repair', icon: <Cloud className="h-4 w-4" />, href: '/steam-wash-washing-machine-repair' },
+  { title: 'Top-Load Repair', icon: <ArrowUpCircle className="h-4 w-4" />, href: '/top-load-washing-machine-repair' },
+  { title: 'Twin-Tub Repair', icon: <Columns2 className="h-4 w-4" />, href: '/twin-tub-washing-machine-repair' },
 ];
 
 const SYMPTOMS = [
@@ -183,10 +201,46 @@ const FAQS = [
   },
 ];
 
+// Top brands shown in the nav dropdown (logos fetched token-free by domain).
+const NAV_BRANDS = [
+  { name: 'LG', domain: 'lg.com' },
+  { name: 'Samsung', domain: 'samsung.com' },
+  { name: 'Bosch', domain: 'bosch-home.com' },
+  { name: 'Siemens', domain: 'siemens-home.bsh-group.com' },
+  { name: 'Whirlpool', domain: 'whirlpool.com' },
+  { name: 'Panasonic', domain: 'panasonic.com' },
+  { name: 'Electrolux', domain: 'electrolux.com' },
+  { name: 'Miele', domain: 'miele.com' },
+  { name: 'Hitachi', domain: 'hitachi.com' },
+];
+
+const navBrandLogoUrl = (domain: string) =>
+  `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+
+function NavBrandLogo({ name, domain }: { name: string; domain: string }) {
+  const [failed, setFailed] = React.useState(false);
+  return failed ? (
+    <span className="w-7 h-7 rounded-md bg-neutral-800 text-[#f2b134] flex items-center justify-center font-display font-bold text-[13px] select-none">
+      {name.charAt(0)}
+    </span>
+  ) : (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src={navBrandLogoUrl(domain)}
+      alt={`${name} washing machine repair Dubai`}
+      className="w-7 h-7 object-contain"
+      loading="lazy"
+      referrerPolicy="no-referrer"
+      onError={() => setFailed(true)}
+    />
+  );
+}
+
 export default function WaterInletRepairPage() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = React.useState(false);
   const [servicesOpen, setServicesOpen] = React.useState(false);
+  const [brandsOpen, setBrandsOpen] = React.useState(false);
   const [openFaq, setOpenFaq] = React.useState<number | null>(0);
 
   return (
@@ -198,14 +252,14 @@ export default function WaterInletRepairPage() {
           style={{ backgroundColor: '#1E1E1E' }}
           className="w-full flex items-center justify-between py-4 px-5 md:px-8 shadow-xl rounded-b-3xl border-x border-b border-neutral-800"
         >
-          <div className="flex items-center">
-            <Link href="/" className="relative h-18 w-56 sm:h-24 sm:w-72 md:w-80 -my-5 sm:-my-7 flex items-center cursor-pointer select-none z-10 transition-transform hover:scale-[1.02]">
-              <Image src={LOGO_URL} alt="Washing Machine Experts" fill sizes="320px" className="object-contain object-left" referrerPolicy="no-referrer" priority />
+          <div className="flex items-center min-w-0">
+            <Link href="/" className="relative h-16 w-48 sm:h-20 sm:w-60 lg:h-24 lg:w-72 -my-4 sm:-my-6 flex items-center cursor-pointer select-none z-10 shrink-0 transition-transform hover:scale-[1.02]">
+              <Image src={LOGO_URL} alt="Washing Machine Experts" fill sizes="288px" className="object-contain object-left" referrerPolicy="no-referrer" priority />
             </Link>
 
-            <div className="w-[1.5px] h-6 bg-neutral-700/80 mx-4 md:mx-6 shrink-0" />
+            <div className="w-[1.5px] h-6 bg-neutral-700/80 mx-3 lg:mx-5 shrink-0" />
 
-            <nav className="hidden md:flex items-center gap-6 lg:gap-8 font-sans text-[18px] font-medium text-neutral-300">
+            <nav className="hidden md:flex items-center gap-4 lg:gap-6 font-sans text-[15px] lg:text-[16px] font-medium text-neutral-300 whitespace-nowrap">
               <Link href="/" className="hover:text-white transition-colors">Home</Link>
               <Link href="/about" className="hover:text-white transition-colors">About</Link>
 
@@ -220,27 +274,73 @@ export default function WaterInletRepairPage() {
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 8, scale: 0.97 }}
                       transition={{ duration: 0.2 }}
-                      className="absolute top-10 -left-20 w-[420px] bg-[#1E1E1E] border border-neutral-800 rounded-2xl shadow-2xl p-4 z-50"
+                      className="absolute top-10 -left-40 w-[560px] bg-[#1E1E1E] border border-neutral-800 rounded-2xl shadow-2xl p-4 z-50 max-h-[75vh] overflow-y-auto"
                     >
                       <div className="px-1 pb-3 mb-3 border-b border-neutral-800 flex items-center justify-between">
                         <span className="text-neutral-500 font-mono text-[10px] tracking-wider uppercase">Our Services</span>
-                        <span className="text-[#f2b134] text-[10px] font-mono">8 Services</span>
+                        <span className="text-[#f2b134] text-[10px] font-mono">17 Services</span>
                       </div>
-                      <div className="grid grid-cols-2 gap-2">
+                      <div className="grid grid-cols-3 gap-2">
                         {NAV_SERVICES.map((s) => (
                           <Link
                             key={s.title}
                             href={s.href}
                             onClick={() => setServicesOpen(false)}
-                            className={`flex items-center gap-3 px-3.5 py-3 rounded-xl transition-all group ${s.active ? 'bg-neutral-800' : 'hover:bg-neutral-800'}`}
+                            className={`flex flex-col items-center text-center gap-2 px-3 py-3.5 rounded-xl transition-all group ${s.active ? 'bg-neutral-800' : 'hover:bg-neutral-800'}`}
                           >
-                            <span className="w-8 h-8 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
+                            <span className="w-9 h-9 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
                               {s.icon}
                             </span>
-                            <span className={`text-[13px] font-medium leading-tight transition-colors ${s.active ? 'text-[#f2b134]' : 'text-neutral-300 group-hover:text-white'}`}>{s.title}</span>
+                            <span className={`text-[12px] font-medium leading-tight transition-colors ${s.active ? 'text-[#f2b134]' : 'text-neutral-300 group-hover:text-white'}`}>{s.title}</span>
                           </Link>
                         ))}
                       </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
+              <div className="relative">
+                <button onClick={() => setBrandsOpen(!brandsOpen)} className="hover:text-white flex items-center gap-1 cursor-pointer">
+                  Brands <ChevronDown className={`h-3.5 w-3.5 transition-transform duration-200 ${brandsOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                  {brandsOpen && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 8, scale: 0.97 }}
+                      animate={{ opacity: 1, y: 0, scale: 1 }}
+                      exit={{ opacity: 0, y: 8, scale: 0.97 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-10 -left-24 w-[340px] bg-[#1E1E1E] border border-neutral-800 rounded-2xl shadow-2xl p-4 z-50"
+                    >
+                      <div className="px-1 pb-3 mb-3 border-b border-neutral-800 flex items-center justify-between">
+                        <span className="text-neutral-500 font-mono text-[10px] tracking-wider uppercase">Brands We Repair</span>
+                        <span className="text-[#f2b134] text-[10px] font-mono">38+ Brands</span>
+                      </div>
+                      <div className="grid grid-cols-3 gap-2">
+                        {NAV_BRANDS.map((brand) => (
+                          <Link
+                            key={brand.name}
+                            href="/brands"
+                            onClick={() => setBrandsOpen(false)}
+                            className="flex flex-col items-center text-center gap-2 px-2 py-3 rounded-xl bg-white/[0.03] hover:bg-neutral-800 transition-all group"
+                          >
+                            <span className="w-10 h-10 rounded-lg bg-white flex items-center justify-center shrink-0 p-1.5">
+                              <NavBrandLogo name={brand.name} domain={brand.domain} />
+                            </span>
+                            <span className="text-[11px] font-medium leading-tight text-neutral-300 group-hover:text-white transition-colors">{brand.name}</span>
+                          </Link>
+                        ))}
+                      </div>
+                      <Link
+                        href="/brands"
+                        onClick={() => setBrandsOpen(false)}
+                        style={{ backgroundColor: '#f2b134' }}
+                        className="mt-3 w-full flex items-center justify-center gap-2 rounded-xl text-neutral-900 font-bold text-[13px] py-3 hover:brightness-105 transition-all"
+                      >
+                        Show All Brands
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -251,13 +351,13 @@ export default function WaterInletRepairPage() {
             </nav>
           </div>
 
-          <div className="flex items-center gap-3 md:gap-5">
+          <div className="flex items-center gap-3 md:gap-4 shrink-0 ml-2">
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               href={`tel:${PHONE}`}
               style={{ backgroundColor: '#f2b134' }}
-              className="hidden md:flex rounded-full text-neutral-900 font-bold px-6 py-2.5 items-center gap-2 text-sm shadow-lg hover:brightness-105 transition-all"
+              className="hidden md:flex rounded-full text-neutral-900 font-bold px-5 lg:px-6 py-2.5 items-center gap-2 text-sm shadow-lg hover:brightness-105 transition-all shrink-0"
             >
               <span className="tracking-tight whitespace-nowrap">Book A Call</span>
               <svg className="h-3.5 w-3.5 stroke-[2.5] stroke-neutral-900" viewBox="0 0 24 24" fill="none">
@@ -301,6 +401,7 @@ export default function WaterInletRepairPage() {
                 {[
                   { label: 'Home', href: '/' },
                   { label: 'About', href: '/about' },
+                  { label: 'Brands', href: '/brands' },
                   { label: 'Blog', href: '/blog' },
                   { label: 'Contact', href: '/contact' },
                 ].map((item, idx) => (
@@ -332,18 +433,18 @@ export default function WaterInletRepairPage() {
                       transition={{ duration: 0.25, ease: 'easeInOut' }}
                       className="overflow-hidden"
                     >
-                      <div className="flex flex-col gap-1 pt-2 pb-3">
+                      <div className="grid grid-cols-3 gap-1.5 pt-2 pb-3">
                         {NAV_SERVICES.map((s) => (
                           <Link
                             key={s.title}
                             href={s.href}
                             onClick={() => setMobileOpen(false)}
-                            className="flex items-center gap-3 px-2 py-3 rounded-xl hover:bg-neutral-800 transition-all group"
+                            className="flex flex-col items-center text-center gap-2 px-2 py-3 rounded-xl hover:bg-neutral-800 transition-all group"
                           >
-                            <span className="w-8 h-8 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
+                            <span className="w-9 h-9 rounded-lg bg-neutral-800 group-hover:bg-[#f2b134]/15 flex items-center justify-center text-[#f2b134] shrink-0 transition-colors">
                               {s.icon}
                             </span>
-                            <span className="text-[15px] font-medium text-neutral-300 group-hover:text-white transition-colors">{s.title}</span>
+                            <span className="text-[12px] font-medium leading-tight text-neutral-300 group-hover:text-white transition-colors">{s.title}</span>
                           </Link>
                         ))}
                       </div>
