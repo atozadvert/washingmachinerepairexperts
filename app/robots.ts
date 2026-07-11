@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 
-const SITE_URL = (process.env.APP_URL || 'http://localhost:3000').replace(/\/$/, '');
+const SITE_URL = (process.env.APP_URL || 'https://washingmachineexperts.com').replace(/\/$/, '');
 
 export default function robots(): MetadataRoute.Robots {
   return {

@@ -19,7 +19,7 @@ const interTight = Inter_Tight({
   display: 'swap',
 });
 
-const siteUrl = process.env.APP_URL || 'http://localhost:3000';
+const siteUrl = process.env.APP_URL || 'https://washingmachineexperts.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

@@ -3,7 +3,7 @@ import { BRANDS } from './brands/brand-data';
 
 // Public site URL. APP_URL is injected at runtime by the host; set it to the
 // production domain so the sitemap contains absolute production URLs.
-const SITE_URL = (process.env.APP_URL || 'http://localhost:3000').replace(/\/$/, '');
+const SITE_URL = (process.env.APP_URL || 'https://washingmachineexperts.com').replace(/\/$/, '');
 
 // Core static pages
 const STATIC_PAGES = ['', '/about', '/blog', '/contact', '/brands'];
