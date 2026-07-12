@@ -70,7 +70,7 @@ export default function SiteFooter() {
                   </div>
                   <div>
                     <p className="text-neutral-500 text-[11px] uppercase tracking-wider">Phone</p>
-                    <p className="text-white">+971 50 893 1985</p>
+                    <p className="text-white">+971 55 787 3590</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">

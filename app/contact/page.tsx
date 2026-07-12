@@ -25,7 +25,7 @@ const CONTACT_METHODS = [
   {
     icon: <Phone className="h-6 w-6" />,
     title: 'Call Us',
-    detail: '+971 50 893 1985',
+    detail: '+971 55 787 3590',
     sub: 'Fastest way to book a same-day repair',
     href: `tel:${PHONE}`,
     external: false,
@@ -33,7 +33,7 @@ const CONTACT_METHODS = [
   {
     icon: <MessageCircle className="h-6 w-6" />,
     title: 'WhatsApp',
-    detail: '+971 50 893 1985',
+    detail: '+971 55 787 3590',
     sub: 'Send us a photo of the issue',
     href: WHATSAPP,
     external: true,
@@ -154,7 +154,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-3 mt-4">
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Phone className="h-4 w-4 text-[#f2b134]" /></span>
-                  <span>+971 50 893 1985</span>
+                  <span>+971 55 787 3590</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Mail className="h-4 w-4 text-[#f2b134]" /></span>

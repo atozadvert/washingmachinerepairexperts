@@ -32,8 +32,8 @@ import {
 export const LOGO_URL =
   'https://res.cloudinary.com/dbvjzyevy/image/upload/v1782108374/Red_and_Yellow_Modern_Simple_Application_Logogram_250_x_150_px_1_svnokc.png';
 
-export const PHONE = '+971508931985';
-export const WHATSAPP = 'https://wa.me/971508931985';
+export const PHONE = '+971557873590';
+export const WHATSAPP = 'https://wa.me/971557873590';
 
 const NAV_SERVICES = [
   { title: 'Drainage Repair', icon: <Droplets className="h-4 w-4" />, href: '/drainage-repair' },

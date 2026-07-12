@@ -48,8 +48,8 @@ import {
 const LOGO_URL =
   'https://res.cloudinary.com/dbvjzyevy/image/upload/v1782108374/Red_and_Yellow_Modern_Simple_Application_Logogram_250_x_150_px_1_svnokc.png';
 
-const PHONE = '+971508931985';
-const WHATSAPP = 'https://wa.me/971508931985';
+const PHONE = '+971557873590';
+const WHATSAPP = 'https://wa.me/971557873590';
 
 const NAV_SERVICES = [
   { title: 'Drainage Repair', icon: <Droplets className="h-4 w-4" />, href: '/drainage-repair' },
@@ -1187,7 +1187,7 @@ export default function DrumRepairPage() {
               <div className="flex flex-col gap-3 mt-4">
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Phone className="h-4 w-4 text-[#f2b134]" /></span>
-                  <span>+971 50 893 1985</span>
+                  <span>+971 55 787 3590</span>
                 </div>
                 <div className="flex items-center gap-3 text-neutral-700 text-sm font-medium">
                   <span className="p-2 rounded-lg bg-[#f2b134]/10"><Mail className="h-4 w-4 text-[#f2b134]" /></span>
@@ -1309,7 +1309,7 @@ export default function DrumRepairPage() {
                   </div>
                   <div>
                     <p className="text-neutral-500 text-[11px] uppercase tracking-wider">Phone</p>
-                    <p className="text-white">+971 50 893 1985</p>
+                    <p className="text-white">+971 55 787 3590</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
